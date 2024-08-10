@@ -6,7 +6,9 @@ const router = express.Router();
 
 // especificar o que o router faz
 router.get('/', (_, res) => {
-    res.send('Pedidos.');
+    res.render('pedidos/index',{
+        nomeDoUsuario: "Carmella Rose"
+    });
 });
 
 // exportar módulo
